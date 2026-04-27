@@ -21,7 +21,6 @@ body {
 .suprema {
   display: flex;
   flex-direction: column;
-
 }
 
 .container {
@@ -30,7 +29,7 @@ body {
   row-gap: 220px;
   background-color: var(--bg-color1);
   padding: 30px;
-  width: 1;
+  width: 100%;
 }
 
 li {
@@ -67,7 +66,6 @@ a {
 }
 
 .nav-link:hover {
-
   border-bottom: 3px solid hotpink;
 }
 
@@ -82,22 +80,18 @@ a {
   height: 3px;
   border-radius: 2px;
   margin: 5px auto;
-  background-color: #ffff;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
 
-
 .lio {
   color: #A12B3D;
-  font-family: sans-serif;
 }
-
 
 .lmp {
   background-color: white;
   color: black;
   padding: 10px;
-  font-family: sans-serif;
   font-size: 15px;
   margin-left: 40px;
   border-radius: 10px;
@@ -107,7 +101,6 @@ a {
 .dark-light {
   display: flex;
   justify-content: flex-start;
-
 }
 
 img {
@@ -121,18 +114,15 @@ img {
   width: 100%;
   gap: 20px;
   align-items: center;
-  top: 50%;
   padding-bottom: 322px;
 }
 
 h1 {
   font-size: 70px;
-  font-family: sans-serif;
   color: var(--font-color);
 }
 
 .inicio span {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 73px;
   color: #A12B3D;
 }
@@ -145,7 +135,6 @@ h1 {
 }
 
 .textDigit {
-  font-family: sans-serif;
   color: var(--font-color);
   font-size: 38px;
   animation: escrever 4s steps(22) infinite alternate, blink 0.5s infinite alternate;
@@ -155,82 +144,57 @@ h1 {
 }
 
 @keyframes escrever {
-  to {
-    width: 100%;
-  }
-
-  from {
-    width: 0;
-  }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 @keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+  50% { border-color: transparent; }
 }
 
 .contact {
   display: flex;
-  flex-direction: row;
   gap: 30px;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
-.linkedin {
+.linkedin,
+.github,
+.wpp {
   width: 50px;
+  transition: 0.3s;
 }
 
-.linkedin:hover {
-  cursor: pointer;
-}
-
-.github {
-  width: 50px;
-}
-
-.github:hover {
-  cursor: pointer;
+.linkedin:hover,
+.github:hover,
+.wpp:hover {
+  transform: translateY(-5px) scale(1.1);
 }
 
 .curriculo {
   border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
   font-size: 20px;
   background-color: white;
   padding: 10px;
+  cursor: pointer;
 }
 
 .curriculo:hover {
   background-color: cadetblue;
-  cursor: pointer;
-}
-
-.wpp {
-  width: 50px;
-}
-
-.wpp:hover {
-  cursor: pointer;
 }
 
 .sobre {
   display: flex;
   align-items: start;
   padding: 60px 15%;
-  background-color: var(--bg-color1);
   gap: 50px;
-  flex-direction: row;
 }
 
 .h3p {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding: 15px 15px;
+  padding: 15px;
 }
 
 .eu {
@@ -239,65 +203,28 @@ h1 {
   border: 2px solid #A12B3D;
 }
 
-.classMe {
-  display: flex;
-  row-gap: 30px;
-  gap: 50px;
-}
-
-.Certificados {
-  display: flex;
-  flex-direction: column;
-  row-gap: 30px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.cursos {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-.Certificados img {
-  width: 50%;
-  height: 80%;
-  border: 2px solid var(--border-color);
-}
-
 .sobre p {
   color: var(--font-color);
-  font-family: sans-serif;
   font-size: 20px;
 }
 
 .sobre h3 {
   color: var(--font-color);
-  font-family: sans-serif;
   font-size: 35px;
   margin-bottom: 15px;
 }
 
-
 .sectionTitle {
   font-size: 46px;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding: 50px 0;
   color: var(--font-color);
-  padding-bottom: 50px;
 }
 
 .gridContainer {
   display: flex;
-  grid-template-columns: 2fr 8fr;
-  padding: 20px;
-  flex: 2 8 auto;
-  align-items: center;
   justify-content: center;
   width: 100%;
-
 }
 
 .mainContent {
@@ -305,22 +232,15 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 70px;
-  grid-area: mainContent;
-  align-items: center;
   width: 100%;
-  row-gap: 150px;
-
 }
 
 .categoryCard {
   width: 820px;
   height: 600px;
-  border: 2px solid transparent;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
 }
 
 .categoryCard img {
@@ -328,267 +248,28 @@ h1 {
   width: 80%;
 }
 
+.categoryCard:hover {
+  transform: scale(1.03);
+  border: 2px solid var(--primary-color);
+}
+
 .categoryCard p {
-  font-family: Arial, Helvetica, sans-serif;
   color: var(--font-color);
   font-size: 30px;
-}
-
-.mainCategoryCardTitle {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 6px;
-}
-
-.mainCategoryCardDescription {
-  padding: 6px;
 }
 
 .projects {
   background-color: var(--bg-color2);
   padding-bottom: 80px;
-
-
 }
 
-.tecnologias {
-  display: grid;
-  grid-template-columns: 2fr 8fr;
-  padding: 20px;
-  flex: 1 0 auto;
-  align-items: center;
-  padding-bottom: 200px;
-}
-
-.tech1,
-.tech2,
-.tech3,
-.tech4,
-.tech5,
-.tech6,
-.tech7 {
-  display: flex;
-  width: 100px;
-  height: auto;
-  border: 2px solid transparent;
-  border-radius: 110px;
-  transition: 0.5s;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  padding: -20px;
-  gap: 80px;
-}
-
-.tech1 img,
-.tech2 img,
-.tech3 img,
-.tech4 img,
-.tech5 img,
-.tech6 img,
-.tech7 img {
-  width: 100px;
-  height: 100px;
-}
-
-
+/* ===== SKILLS CORRIGIDO ===== */
 
 .techContent {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 5px;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 60px;
-  gap: 50px;
 }
 
-.me {
-  padding-top: 30px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.titleHabilites {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 140px;
-}
-
-
-footer {
-
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: var(--bg-color2);
-  height: auto;
-  width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: var(--font-color);
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-}
-
-footer img {
-  width: 40px;
-  cursor: pointer;
-}
-
-
-@media (max-width: 778px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger .bar {
-    background-color: var(--font-color);
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .nav-menu {
-    position: absolute;
-    left: -100%;
-    top: 85px;
-    gap: 0;
-    border-radius: 0 0 20px 20px;
-    background-color: var(--bg-color2);
-    text-align: center;
-    flex-direction: column;
-    width: 100%;
-    transition: 0.3s;
-  }
-
-  .nav-item {
-    margin: 16px 0;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .sobre {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .mainContent {
-    width: 90%;
-  }
-
-
-  .projects {
-    padding-bottom: 100px;
-  }
-
-
-}
-
-@media (max-width: 600px) {
-  .categoryCard img {
-    height: 400px;
-    width: 100%;
-  }
-
-  .me {
-    flex-direction: column;
-  }
-
-  .titleHabilites{
-    text-align: center;
-    align-items: center;
-    padding-left: 30px;
-  }
-
-
-}
-
-@media (max-width: 450px) {
-  .tecnologias {
-    width: 100%;
-  }
-
-  .title {
-    font-size: 50px;
-  }
-
-  .inicio span {
-    font-size: 50px;
-  }
-
-  .techContent {
-    width: 90%;
-  }
-
-  .categoryCard {
-    height: 430px;
-  }
-
-  .textDigit {
-    font-size: 28px;
-  }
-
-  .texDigitBox {
-    height: 50px;
-    display: grid;
-    place-items: center;
-    width: 280px;
-  }
-
-  .categoryCard img {
-    height: 280px;
-    width: 100%;
-  }
-
-  .titleHabilites{
-    text-align: center;
-    align-items: center;
-    padding-left: 80px;
-  }
-
-}
-
-/* ===== SKILLS MODERNO ===== */
-
-#habilidades {
-  padding: 80px 20px;
-}
-
-.sectionTitle {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
-}
-
-/* Container geral */
-.techContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Grid mais moderno */
 .titleHabilites {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -597,34 +278,20 @@ footer img {
   width: 100%;
 }
 
-/* Cards individuais */
-.tech1,
-.tech2,
-.tech3,
-.tech4,
-.tech5,
-.tech6 {
+.tech1, .tech2, .tech3, .tech4, .tech5, .tech6, .tech7, .tech8, .tech9, .tech10 {
   background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
   border-radius: 16px;
   padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* efeito moderno */
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-  transition: all 0.3s ease;
+  transition: 0.3s;
   position: relative;
-  overflow: hidden;
 }
 
-/* Glow verde sutil */
-.tech1::before,
-.tech2::before,
-.tech3::before,
-.tech4::before,
-.tech5::before,
-.tech6::before {
+.tech1::before, .tech2::before, .tech3::before, .tech4::before,
+.tech5::before, .tech6::before, .tech7::before, .tech8::before, .tech9::before, .tech10::before {
   content: "";
   position: absolute;
   width: 150%;
@@ -634,66 +301,62 @@ footer img {
   transition: 0.4s;
 }
 
-/* Hover top */
-.tech1:hover,
-.tech2:hover,
-.tech3:hover,
-.tech4:hover,
-.tech5:hover,
-.tech6:hover {
+.tech1:hover, .tech2:hover, .tech3:hover, .tech4:hover,
+.tech5:hover, .tech6:hover, .tech7:hover, .tech8:hover, .tech9:hover, .tech10:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
 
-/* Glow aparece */
-.tech1:hover::before,
-.tech2:hover::before,
-.tech3:hover::before,
-.tech4:hover::before,
-.tech5:hover::before,
-.tech6:hover::before {
+.tech1:hover::before, .tech2:hover::before, .tech3:hover::before,
+.tech4:hover::before, .tech5:hover::before, .tech6:hover::before,
+.tech7:hover::before, .tech8:hover::before, .tech9:hover::before, .tech10:hover::before  {
   opacity: 1;
 }
 
-/* Ícones */
-.tech1 img,
-.tech2 img,
-.tech3 img,
-.tech4 img,
-.tech5 img,
-.tech6 img {
+.tech1 img, .tech2 img, .tech3 img, .tech4 img,
+.tech5 img, .tech6 img, .tech7 img, .tech8 img, .tech9 img, .tech10 img  {
   width: 70px;
-  height: 70px;
-  transition: 0.3s;
   filter: grayscale(100%);
+  transition: 0.3s;
 }
 
-/* Ícone ganha vida no hover */
-.tech1:hover img,
-.tech2:hover img,
-.tech3:hover img,
-.tech4:hover img,
-.tech5:hover img,
-.tech6:hover img {
+.tech1:hover img, .tech2:hover img, .tech3:hover img,
+.tech4:hover img, .tech5:hover img, .tech6:hover img,
+.tech7:hover img, .tech8:hover img, .tech9:hover img, .tech10:hover img {
   transform: scale(1.15);
   filter: grayscale(0%);
 }
 
-
-
-
-/* ===== HOVER MODERNO PARA ÍCONES ===== */
-
-.linkedin,
-.github,
-.wpp {
-  transition: transform 0.3s ease, filter 0.3s ease;
+/* FOOTER */
+footer {
+  background: var(--bg-color2);
+  padding: 40px;
+  color: var(--font-color);
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
-/* efeito suave */
-.linkedin:hover,
-.github:hover,
-.wpp:hover {
-  transform: translateY(-5px) scale(1.1);
-  filter: brightness(1.2);
+footer img {
+  width: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 778px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .sobre {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .categoryCard {
+    width: 90%;
+  }
+}
+
+
+.techContent {
+  padding-bottom: 100px;
 }
