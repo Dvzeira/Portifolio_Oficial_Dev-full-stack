@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Andrade - Desenvolvedor Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfólio</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section - CENTRALIZADO -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span>Olá, sou</span>
+                    <span class="gradient-text">Davi Andrade</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typewriter-text">Desenvolvedor Full Stack</span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Criando aplicações modernas, performáticas e bem projetadas
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://www.linkedin.com/in/davi-andrade-da-silva-279884234/" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="Currículo Davi Andrade da Silva.pdf" class="btn btn-primary" target="_blank" download>
+                        <i class="fas fa-file-pdf"></i> Currículo
+                    </a>
+                    <a href="https://wa.me/5531987438755" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://github.com/Dvzeira" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder judicial">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema Judicial Full Stack</h3>
+                        <p>Sistema completo Laravel (Backend) + React (front-end) para gestão judicial com autenticação, CRUD e relatórios avançados.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Dvzeira/TWT-sistema-processos" class="btn btn-sm">Ver Projeto</a>
+                            <a href="https://github.com/Dvzeira/TWT-sistema-processos" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder api-stock">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Consumindo API de Estoque</h3>
+                        <p>Aplicação React consumindo API externa de controle de estoque com dashboard interativo e gráficos em tempo real.</p>
+                        <div class="project-links">
+                            <a href="https://estoque-dvzeira.vercel.app/" class="btn btn-sm">Ver Projeto</a>
+                            <a href="https://github.com/Dvzeira/SistemaEstoque" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder anime">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Página de Animes</h3>
+                        <p>Catálogo de animes com busca, filtros e consumo de API externa. Interface moderna e responsiva.</p>
+                        <div class="project-links">
+                            <a href="https://anime-api-page.vercel.app/" class="btn btn-sm">Ver Projeto</a>
+                            <a href="https://github.com/Dvzeira/AnimeApiPage" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder bookstore">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Página de Filmes</h3>
+                        <p>Página de filmes feita com PHP e Mysql</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Dvzeira/moviestar" class="btn btn-sm">Ver Projeto</a>
+                            <a href="https://github.com/Dvzeira/moviestar" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - ALINHADA -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-main">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p>Meu nome é <strong>Davi Andrade da Silva</strong> e sou <strong>Desenvolvedor Full Stack</strong>, com experiência prática em desenvolvimento e banco de dados.</p>
+                    <p>Atuei como <strong>desenvolvedor SQL</strong> na empresa <strong>Mentalistas Tecnologia</strong>, trabalhando com análise, manutenção e otimização de dados, além de garantir o bom funcionamento de sistemas.</p>
+                    <p>Nos últimos meses, também atuei como <strong>Desenvolvedor freelancer</strong>, desenvolvendo sites e páginas com foco em performance, responsividade e boa experiência do usuário.</p>
+                    <p>Possuo conhecimentos em <strong>HTML, CSS, JavaScript, PHP, React, Node JS, Laravel, MySQL, Firebird e Docker</strong>, atuando tanto no desenvolvimento front-end quanto no back-end. Sou um profissional em constante evolução, com facilidade de aprendizado e foco em entregar soluções eficientes e de qualidade.</p>
+                </div>
+                
+                <div class="about-education">
+                    <h3>Formação</h3>
+                    <div class="education-list">
+                        <div class="education-item">
+                            <span>Análise e Desenvolvimento de Sistemas</span>
+                            <small>UNA</small>
+                        </div>
+                        <div class="education-item">
+                            <span>Técnico em Programação</span>
+                            <small>Vital Brasil</small>
+                        </div>
+                        <div class="education-item">
+                            <span>Programador Full Stack</span>
+                            <small>One Bit Code</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - ÍCONES DAS TECNOLOGIAS -->
+   <section id="skills" class="section skills">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+
+            <div class="skill-item">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML5</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS3</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-php-plain colored"></i>
+                <span>PHP</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-laravel-plain colored"></i>
+                <span>Laravel</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-docker-plain colored"></i>
+                <span>Docker</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-mysql-plain colored"></i>
+                <span>MySQL</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+            </div>
+
+            <div class="skill-item">
+                <i class="devicon-firebird-plain colored"></i>
+                <span>Firebird</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="daviandrade062@gmail.com">daviandrade062@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="Linkedin: https://www.linkedin.com/in/davi andrade da silva 279884234/" target="_blank">Linkedin: https://www.linkedin.com/in/davi andrade da silva 279884234/</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/Dvzeira" target="_blank">https://github.com/Dvzeira</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Davi Andrade da Silva</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
